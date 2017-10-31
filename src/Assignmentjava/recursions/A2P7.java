@@ -10,7 +10,7 @@ package Assignmentjava.recursions;
  * @author Kareem
  */
 public class A2P7 {
-    
+     
     // Method that checks if a word is palindrome
     public boolean isPalindrome(String word){
         
@@ -19,13 +19,13 @@ public class A2P7 {
         return false;
 
     // Check if the word length is equal to 0 or 1 - return true 
-    }else if(word.length() == 0 || word.length() == 1){
+    }else if(word.length() == 0 ||word.length() == 1){
         return true;
     }
 
     // Checks if the first letter and the last letter are equal
     if (word.charAt(0) == word.charAt(word.length()-1)){
-        return isPalindrome (word.substring(1, word.length()-1));
+        return isPalindrome (word.substring(1, word.length() -1));
     }
     return false;
 }
